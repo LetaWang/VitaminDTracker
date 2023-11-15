@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, Button } from 'react-native';
 import { BleManager } from 'react-native-ble-plx';
+import BottomToolbar from '../BottomToolbar';
+import BluetoothStyle from '../../stylesheets/BluetoothStyle.js'
 
-function ArduinoConnectionComponent() {
+function ArduinoConnectionComponent({ navigation }) {
   const [connected, setConnected] = useState(false);
   const [manager, setManager] = useState(null);
   const [device, setDevice] = useState(null);
@@ -10,6 +12,7 @@ function ArduinoConnectionComponent() {
   useEffect(() => {
     const bleManager = new BleManager();
     setManager(bleManager);
+    console.log("Bluetooth Manager Started");
 
     return () => {
       if (device) {
@@ -26,6 +29,7 @@ function ArduinoConnectionComponent() {
     }
 
     if (!device) {
+        console.log("Scanning for Device");
       // Replace 'your-device-id' with the actual device ID (Bluetooth MAC address)
       const deviceID = '56:03:E6:B9:2F:0C';
       console.log('Retrieving device information...');
@@ -70,13 +74,14 @@ function ArduinoConnectionComponent() {
   };
 
   return (
-    <View>
+    <View style={BluetoothStyle.container}>
       <Text>Arduino Nano Connection</Text>
       <Button
         title={connected ? 'Connected' : 'Connect to Arduino Nano'}
         onPress={connectToArduinoNano}
         disabled={connected}
       />
+      <BottomToolbar navigation={navigation}  pageName={'Bluetooth'}  />
     </View>
   );
 }
