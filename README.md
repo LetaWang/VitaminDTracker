@@ -2,6 +2,7 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 npm install @react-navigation/native @react-navigation/stack
 npm install @react-navigation/native
+npm install react-native-svg
 
 
 
