@@ -4,11 +4,10 @@ import { StyleSheet } from 'react-native';
 const HistoryStyle = StyleSheet.create({
   container: {
     flex: 1,
-//    justifyContent: 'center',
-//    alignItems: 'center',
   },
   text: {
-    fontSize: 20,
+    fontSize: 30,
+    color: 'black',
   },
     title: {
         fontSize: 60,
@@ -16,6 +15,28 @@ const HistoryStyle = StyleSheet.create({
         marginLeft: 20,
         marginTop: 20,
         marginBottom: -30,
+    },
+    barGraphBox: {
+        width: '90%',
+        height: 350,
+        marginLeft: '5%',
+        marginTop: 50,
+        backgroundColor: '#DADADA',
+        borderRadius: 10,
+    },
+    avgBox: {
+        width: '90%',
+        height: 150,
+        marginLeft: '5%',
+        marginTop: 20,
+        backgroundColor: '#DADADA',
+        borderRadius: 10,
+        padding: 10,
+    },
+    avgBox2: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
     },
 });
 
