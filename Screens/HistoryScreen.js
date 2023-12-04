@@ -6,11 +6,8 @@ import HistoryStyle from '../stylesheets/HistoryStyle.js'; // Import the stylesh
 const History = ({ navigation }) => {
   return (
     <View style={HistoryStyle.container}>
-      {/* Your main content */}
-      <View>
-        <Text>History</Text>
-        {/* Add your main content here */}
-      </View>
+        <Text style={HistoryStyle.title}>Vitamin D</Text>
+        <Text style={HistoryStyle.title}>History</Text>
 
       {/* Include the BottomToolbar component with navigation */}
       <BottomToolbar navigation={navigation} pageName={'History'} />

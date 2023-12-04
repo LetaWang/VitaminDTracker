@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, TouchableOpacity, Image } from 'react-native';
 import { BleManager } from 'react-native-ble-plx';
 import BottomToolbar from '../BottomToolbar';
 import BluetoothStyle from '../../stylesheets/BluetoothStyle.js'
@@ -75,12 +75,31 @@ function ArduinoConnectionComponent({ navigation }) {
 
   return (
     <View style={BluetoothStyle.container}>
-      <Text>Arduino Nano Connection</Text>
-      <Button
-        title={connected ? 'Connected' : 'Connect to Arduino Nano'}
-        onPress={connectToArduinoNano}
-        disabled={connected}
-      />
+      <Text style={BluetoothStyle.title} >Device</Text>
+      <View style={BluetoothStyle.button}>
+          <TouchableOpacity
+            onPress={connectToArduinoNano}
+            disabled={connected}
+            style={{marginLeft: 10, alignItems: 'center',}}
+          >
+            <Text style={{ color: 'black', fontSize: 25, }}>
+              {connected ? 'Connected' : 'Connect to Device'}
+                  <Image
+                    source={require('./../assets/bluetooth-icon.png')}
+                    style={BluetoothStyle.image}
+                  />
+            </Text>
+          </TouchableOpacity>
+       </View>
+    <View style={BluetoothStyle.connectedBox}>
+      <Text style={BluetoothStyle.text}>Connected Device</Text>
+      <Text style={BluetoothStyle.text2}>No Device Connected</Text>
+    </View>
+    <View style={BluetoothStyle.deviceInformation}>
+        <Text style={BluetoothStyle.text}>Device Information</Text>
+          <Text style={BluetoothStyle.text2}>No Device Connected (But if there was a device connected here is where we would put information about the device, how it works, etc.</Text>
+     </View>
+
       <BottomToolbar navigation={navigation}  pageName={'Bluetooth'}  />
     </View>
   );
