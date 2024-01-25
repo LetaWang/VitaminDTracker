@@ -15,7 +15,7 @@ const BluetoothStyle = StyleSheet.create({
     marginTop: 10,
   },
     title: {
-        fontSize: 60,
+        fontSize: 50,
         color: 'black',
         marginLeft: 20,
         marginTop: 20,

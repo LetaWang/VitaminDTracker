@@ -9,7 +9,7 @@ const UVIndexStyle = StyleSheet.create({
     fontSize: 20,
   },
    title: {
-          fontSize: 60,
+          fontSize: 50,
           color: 'black',
           marginLeft: 20,
           marginTop: 20,
@@ -17,7 +17,7 @@ const UVIndexStyle = StyleSheet.create({
       },
    UVIndexBox: {
         width: '90%',
-        height: 180,
+        height: 150,
         marginLeft: '5%',
         marginTop: 40,
         backgroundColor: '#DADADA',
@@ -39,7 +39,7 @@ const UVIndexStyle = StyleSheet.create({
     },
    UVInfoBox: {
         width: '90%',
-        height: 300,
+        height: 250,
         marginLeft: '5%',
         marginTop: 20,
         backgroundColor: '#DADADA',

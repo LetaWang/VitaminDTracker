@@ -50,16 +50,16 @@ const HomeScreen = ({ navigation }) => {
     </View>
     <View style={HomeScreenStyle.sessionsBox}>
         <Text style={HomeScreenStyle.boxText}>Tracked Sessions</Text>
-        <Text style={HomeScreenStyle.boxTextSmall}>8:34am - 9:31am               36 nmol/L</Text>
-        <Text style={HomeScreenStyle.boxTextSmall}>2:56pm - 4:42pm               52 nmol/L</Text>
-        <Text style={HomeScreenStyle.boxTextSmall}>6:26am - 8:13am               34 nmol/L</Text>
+        <Text style={HomeScreenStyle.boxTextSmall}>8:34am - 9:31am      36 nmol/L</Text>
+        <Text style={HomeScreenStyle.boxTextSmall}>2:56pm - 4:42pm      52 nmol/L</Text>
+        <Text style={HomeScreenStyle.boxTextSmall}>6:26am - 8:13am      34 nmol/L</Text>
     </View>
     <View style={HomeScreenStyle.foodBox}>
         <Text style={HomeScreenStyle.boxText}>Food</Text>
-        <Text style={HomeScreenStyle.boxTextSmall}>Steak                                   12 nmol/L</Text>
-        <Text style={HomeScreenStyle.boxTextSmall}>Chips                                   4 nmol/L</Text>
-        <Text style={HomeScreenStyle.boxTextSmall}>Banana                                  8 nmol/L</Text>
-        <Text style={HomeScreenStyle.boxTextSmall}>Yogurt                                  10 nmol/L</Text>
+        <Text style={HomeScreenStyle.boxTextSmall}>Steak                           12 nmol/L</Text>
+        <Text style={HomeScreenStyle.boxTextSmall}>Chips                             4 nmol/L</Text>
+        <Text style={HomeScreenStyle.boxTextSmall}>Banana                       16 nmol/L</Text>
+        <Text style={HomeScreenStyle.boxTextSmall}>Yogurt                         10 nmol/L</Text>
     </View>
       </ScrollView>
     </SafeAreaView>

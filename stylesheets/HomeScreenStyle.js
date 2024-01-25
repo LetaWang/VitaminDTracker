@@ -6,7 +6,7 @@ const HomeScreenStyle = StyleSheet.create({
         flex: 1,
     },
     title: {
-        fontSize: 60,
+        fontSize: 50,
         color: 'black',
         marginLeft: 20,
         marginTop: 20,
@@ -57,14 +57,14 @@ const HomeScreenStyle = StyleSheet.create({
         color: 'black',
         position: 'absolute',
         top: 90,
-        left: '33%',
+        left: '30%',
     },
     vitaminDLevel2: {
         fontSize: 40,
         color: 'black',
         position: 'absolute',
         top: 150,
-        left: '33%',
+        left: '30%',
     },
     sessionsBox: {
         width: '90%',

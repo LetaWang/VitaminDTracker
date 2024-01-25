@@ -7,27 +7,27 @@ const ProfileStyle = StyleSheet.create({
     justifyContent: 'center',
   },
  title: {
-      fontSize: 60,
+      fontSize: 50,
       color: 'black',
       marginLeft: 20,
   },
   text: {
-    fontSize: 25,
+    fontSize: 22,
     color: 'black',
     marginTop: 10,
   },
   text2: {
-    fontSize: 25,
+    fontSize: 22,
     color: 'black',
     marginBottom: 10,
   },
   image: {
-    height: 200,
-    width: 200,
+    height: 100,
+    width: 100,
   },
   image2: {
-    height: 50,
-    width: 50,
+    height: 40,
+    width: 40,
     marginRight: 20,
     marginTop: 15,
   },
@@ -35,7 +35,7 @@ const ProfileStyle = StyleSheet.create({
       flex: 1,
       justifyContent: 'flex-start',
       alignItems: 'center',
-      marginTop: -600,
+      marginTop: -450,
       height: 0,
   },
     profileTitle: {

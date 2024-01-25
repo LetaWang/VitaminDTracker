@@ -6,11 +6,11 @@ const HistoryStyle = StyleSheet.create({
     flex: 1,
   },
   text: {
-    fontSize: 30,
+    fontSize: 25,
     color: 'black',
   },
     title: {
-        fontSize: 60,
+        fontSize: 50,
         color: 'black',
         marginLeft: 20,
         marginTop: 20,
@@ -32,6 +32,7 @@ const HistoryStyle = StyleSheet.create({
         backgroundColor: '#DADADA',
         borderRadius: 10,
         padding: 10,
+        marginBottom: 100,
     },
     avgBox2: {
         flex: 1,

@@ -21,7 +21,7 @@ const BarGraph = ({ labels, data }) => {
     color: (opacity = 0) => `rgba(0, 0, 0, ${opacity})`,
     strokeWidth: 2,
      barRadius: 10,
-     barPercentage: 0.8,
+     barPercentage: 0.7,
   };
 
   return (

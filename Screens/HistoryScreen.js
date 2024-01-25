@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button, SafeAreaView, ScrollView} from 'react-native';
 import BottomToolbar from './BottomToolbar';
 import HistoryStyle from '../stylesheets/HistoryStyle.js'; // Import the
 import BarGraph from './BarGraph.js';
@@ -28,6 +28,8 @@ const labels = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
 
   return (
     <View style={HistoryStyle.container}>
+    <SafeAreaView>
+                <ScrollView>
         <Text style={HistoryStyle.title}>Vitamin D</Text>
         <Text style={HistoryStyle.title}>History</Text>
         <View style={HistoryStyle.barGraphBox}>
@@ -39,7 +41,8 @@ const labels = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
             <Text style={HistoryStyle.text}>{average}</Text>
         </View>
         </View>
-
+      </ScrollView>
+    </SafeAreaView>
       {/* Include the BottomToolbar component with navigation */}
       <BottomToolbar navigation={navigation} pageName={'History'} />
     </View>
